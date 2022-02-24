@@ -26,7 +26,7 @@
                     </svg>
                 </div>
                 <div class="w-10 h-10 flex items-center justify-center bg-[#202020] rounded-full">
-                    <a href="https://github.com/Phosah">
+                    <a :href="project.githubLink">
                         <img class src="../assets/github.png" alt="Github" />
                     </a>
                 </div>

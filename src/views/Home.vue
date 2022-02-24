@@ -25,14 +25,16 @@ const projectsArr = [
     title: "Implementation of Crypcoin Finance",
     description: "Crypcoin is a crypto solution that aids users in blockchain investing by giving staking abilities and profitable APY for investors to receive profits",
     img: img1,
-    alt: "Crypcoin photo"
+    alt: "Crypcoin photo",
+    githubLink: "https://github.com/Phosah/crypcoin"
   },
   {
     subtitle: "Frontend & Wiring",
     title: "Aise's Portfolio",
     description: "Aise is a Product designer from Nigeria that prioritizes user experiences in the web3 environment and fintech ecosystem",
     img: img2,
-    alt: "Crypcoin photo"
+    alt: "Crypcoin photo",
+    githubLink: "https://github.com/Phosah/aise"
   }
 ];
 
