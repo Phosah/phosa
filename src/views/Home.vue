@@ -16,19 +16,22 @@ import Hero from "../components/Hero.vue";
 import Arsenal from "../components/Arsenal.vue";
 import Projects from "../components/Projects.vue";
 
+import img1 from "@/assets/crypcoin-photo.png"
+import img2 from "@/assets/aise-photo.png"
+
 const projectsArr = [
   {
     subtitle: "Frontend & Wiring",
     title: "Implementation of Crypcoin Finance",
     description: "Crypcoin is a crypto solution that aids users in blockchain investing by giving staking abilities and profitable APY for investors to receive profits",
-    img: "/src/assets/crypcoin-photo.png",
+    img: img1,
     alt: "Crypcoin photo"
   },
   {
     subtitle: "Frontend & Wiring",
     title: "Aise's Portfolio",
     description: "Aise is a Product designer from Nigeria that prioritizes user experiences in the web3 environment and fintech ecosystem",
-    img: "src/assets/aise-photo.png",
+    img: img2,
     alt: "Crypcoin photo"
   }
 ];
