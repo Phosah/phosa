@@ -6,7 +6,12 @@
                 <p class="logo-name text-3xl text-white">Phosa</p>
             </div>
             <div>
-                <button class="py-3 px-10 bg-brand-purple text-white rounded-sm">Let's talk</button>
+                <!-- Calendly link widget begin -->
+                <a
+                    class="mt-8 py-3 px-10 bg-brand-purple text-white rounded-sm cursor-pointer"
+                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/phosa'});return false;"
+                >Let's talk</a>
+                <!-- Calendly link widget end -->
             </div>
         </nav>
     </div>
