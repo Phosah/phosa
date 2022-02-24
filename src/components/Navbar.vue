@@ -1,12 +1,12 @@
 <template>
-    <div class="max-w-7xl mx-auto">
-        <nav class="flex items-center justify-between py-4 bg-slate-600">
+    <div class="max-w-7xl mx-auto px-4">
+        <nav class="flex items-center justify-between py-4">
             <div class="flex items-center space-x-2">
                 <img src="../assets/phosa-logo.png" alt="Phosa logo" />
-                <p class="logo-name text-3xl">Phosa</p>
+                <p class="logo-name text-3xl text-white">Phosa</p>
             </div>
             <div>
-                <button class="py-3 px-6 bg-brand-purple text-white rounded-sm">Let's talk</button>
+                <button class="py-3 px-10 bg-brand-purple text-white rounded-sm">Let's talk</button>
             </div>
         </nav>
     </div>
