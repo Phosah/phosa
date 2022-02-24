@@ -11,30 +11,23 @@
                 >say hi</span> feel free to
                 <span class="text-white">reach out or book an appointment</span>
             </p>
-            <div class="mb-8 flex justify-center space-x-3">
-                <div class="w-10 h-10 flex items-center justify-center bg-[#202020] rounded-full">
-                    <img class src="../assets/whatsapp.png" alt="Whatsapp" />
-                </div>
-                <div class="w-10 h-10 flex items-center justify-center bg-[#202020] rounded-full">
-                    <img class src="../assets/instagram.png" alt="Instagram" />
-                </div>
-                <div class="w-10 h-10 flex items-center justify-center bg-[#202020] rounded-full">
-                    <img class src="../assets/twitter.png" alt="Twitter" />
-                </div>
-                <div class="w-10 h-10 flex items-center justify-center bg-[#202020] rounded-full">
-                    <img class src="../assets/email.png" alt="Email" />
-                </div>
-                <div class="w-10 h-10 flex items-center justify-center bg-[#202020] rounded-full">
-                    <img class src="../assets/linkedin.png" alt="LinkedIn" />
-                </div>
+            <div class="mb-8">
+                <Links />
             </div>
-            <button class="py-3 px-10 bg-brand-purple text-white rounded-sm">Book an appointment</button>
+            <!-- Calendly link widget begin -->
+            <a
+                class="mt-8 py-3 px-10 bg-brand-purple text-white rounded-sm"
+                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/phosa'});return false;"
+            >Book an appointment</a>
+            <!-- Calendly link widget end -->
         </div>
     </div>
 </template>
 
 <script lang="ts">
+import Links from "./Links.vue";
 export default {
     name: "Footer",
+    components: { Links }
 }
 </script>

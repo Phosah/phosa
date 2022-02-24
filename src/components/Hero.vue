@@ -12,32 +12,15 @@
                 <span class="text-white">Web3 applications</span>.
             </p>
         </div>
-        <div class="flex justify-center space-x-3">
-            <div class="w-10 h-10 flex items-center justify-center bg-[#202020] rounded-full">
-                <img class src="../assets/whatsapp.png" alt="Whatsapp" />
-            </div>
-            <div class="w-10 h-10 flex items-center justify-center bg-[#202020] rounded-full">
-                <img class src="../assets/instagram.png" alt="Instagram" />
-            </div>
-            <div class="w-10 h-10 flex items-center justify-center bg-[#202020] rounded-full">
-                <img class src="../assets/twitter.png" alt="Twitter" />
-            </div>
-            <div class="w-10 h-10 flex items-center justify-center bg-[#202020] rounded-full">
-                <img class src="../assets/email.png" alt="Email" />
-            </div>
-            <div class="w-10 h-10 flex items-center justify-center bg-[#202020] rounded-full">
-                <img class src="../assets/linkedin.png" alt="LinkedIn" />
-            </div>
-            <div class="w-10 h-10 flex items-center justify-center bg-[#202020] rounded-full">
-                <img class src="../assets/github.png" alt="Github" />
-            </div>
-        </div>
+        <Links />
     </div>
 </template>
 
 <script lang="ts">
+import Links from "./Links.vue";
 export default {
-    name: "Hero"
+    name: "Hero",
+    components: { Links }
 }
 </script>
 
