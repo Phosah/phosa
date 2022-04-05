@@ -48,6 +48,15 @@ const projectsArr = [
     githubLink: "https://github.com/Phosah/bitpowr",
     livelink: "https://bitpowr-web3.netlify.com"
   },
+  {
+    subtitle: "Frontend & Wiring",
+    title: "Music app UI",
+    description: "A simple UI for a music player app with various reatures to improve interaction",
+    img: img3,
+    alt: "Music app photo",
+    githubLink: "https://github.com/Phosah/music-player-app",
+    livelink: "https://music-webpage.netlify.com"
+  },
 ];
 
 </script>
