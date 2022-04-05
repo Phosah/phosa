@@ -18,6 +18,7 @@ import Projects from "../components/Projects.vue";
 
 import img1 from "@/assets/crypcoin-photo.png"
 import img2 from "@/assets/aise-photo.png"
+import img3 from "@/assets/bitpowr-photo.png"
 
 const projectsArr = [
   {
@@ -26,7 +27,8 @@ const projectsArr = [
     description: "Crypcoin is a crypto solution that aids users in blockchain investing by giving staking abilities and profitable APY for investors to receive profits",
     img: img1,
     alt: "Crypcoin photo",
-    githubLink: "https://github.com/Phosah/crypcoin"
+    githubLink: "https://github.com/Phosah/crypcoin",
+    livelink: "https://crypcoinbinarytrade.com"
   },
   {
     subtitle: "Frontend & Wiring",
@@ -34,8 +36,18 @@ const projectsArr = [
     description: "Aise is a Product designer from Nigeria that prioritizes user experiences in the web3 environment and fintech ecosystem",
     img: img2,
     alt: "Crypcoin photo",
-    githubLink: "https://github.com/Phosah/aise"
-  }
+    githubLink: "https://github.com/Phosah/aise",
+    livelink: "https://aise.netlify.com"
+  },
+  {
+    subtitle: "Frontend & Wiring",
+    title: "Implementation of Bitpowr",
+    description: "Crypcoin is a crypto solution that aids users in blockchain investing by giving staking abilities and profitable APY for investors to receive profits",
+    img: img3,
+    alt: "Bitpowr photo",
+    githubLink: "https://github.com/Phosah/bitpowr",
+    livelink: "https://bitpowr-web3.netlify.com"
+  },
 ];
 
 </script>

@@ -12,18 +12,20 @@
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-2 text-white">
                     <p>View Site</p>
-                    <svg
-                        class="w-6 h-6"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            fill-rule="evenodd"
-                            d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                            clip-rule="evenodd"
-                        />
-                    </svg>
+                    <a :href="project.livelink" target="_blank">
+                        <svg
+                            class="w-6 h-6"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd"
+                            />
+                        </svg>
+                    </a>
                 </div>
                 <div class="w-10 h-10 flex items-center justify-center bg-[#202020] rounded-full">
                     <a :href="project.githubLink">
@@ -33,7 +35,7 @@
             </div>
         </div>
         <div class="md:flex-1">
-            <img :src="project.img" :alt="project.alt" />
+            <img class="my-auto" :src="project.img" :alt="project.alt" />
         </div>
     </div>
 </template>
