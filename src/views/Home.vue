@@ -19,6 +19,9 @@ import Projects from "../components/Projects.vue";
 import img1 from "@/assets/crypcoin-photo.png"
 import img2 from "@/assets/aise-photo.png"
 import img3 from "@/assets/bitpowr-photo.png"
+import img4 from "@/assets/music-photo.png"
+import img5 from "@/assets/nuovo-app-photo.png"
+import img6 from "@/assets/nuovo-store-photo.png"
 
 const projectsArr = [
   {
@@ -52,10 +55,19 @@ const projectsArr = [
     subtitle: "Frontend & Wiring",
     title: "Music app UI",
     description: "A simple UI for a music player app with various reatures to improve interaction",
-    img: img3,
+    img: img4,
     alt: "Music app photo",
     githubLink: "https://github.com/Phosah/music-player-app",
     livelink: "https://music-webpage.netlify.com"
+  },
+  {
+    subtitle: "Frontend & Wiring",
+    title: "E-commerce website",
+    description: "An e-commerce website implementation that focuses on clothing and accessories. Fetching data from an external api ",
+    img: img5,
+    alt: "Ecommerce site photo",
+    githubLink: "https://github.com/Phosah/nuovo",
+    livelink: "https://nuovo-store.netlify.com"
   },
 ];
 
