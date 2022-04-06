@@ -17,7 +17,7 @@
                     <img src="../assets/js.png" alt="js logo" />
                 </div>
                 <div class="mx-auto text-center">
-                    <img src="../assets/react.png" alt="react logo" />
+                    <img src="../assets/vue.png" alt="vue logo" />
                 </div>
                 <div class="mx-auto text-center">
                     <img src="../assets/sass.png" alt="sass logo" />

@@ -21,7 +21,7 @@ import img2 from "@/assets/aise-photo.png"
 import img3 from "@/assets/bitpowr-photo.png"
 import img4 from "@/assets/music-photo.png"
 import img5 from "@/assets/nuovo-app-photo.png"
-import img6 from "@/assets/nuovo-store-photo.png"
+import img6 from "@/assets/athena-photo.png"
 
 const projectsArr = [
   {
@@ -62,12 +62,21 @@ const projectsArr = [
   },
   {
     subtitle: "Frontend & Wiring",
-    title: "E-commerce website",
+    title: "Nuovo Store",
     description: "An e-commerce website implementation that focuses on clothing and accessories. Fetching data from an external api ",
     img: img5,
     alt: "Ecommerce site photo",
     githubLink: "https://github.com/Phosah/nuovo",
     livelink: "https://nuovo-store.netlify.com"
+  },
+  {
+    subtitle: "Frontend & Wiring",
+    title: "Athena",
+    description: "Athena is a decentralized exchange (DEX) on the Ethereum. Athena’s Exchange design is based on automated market maker (AMM)",
+    img: img6,
+    alt: "Athena",
+    githubLink: "https://github.com/Phosah/athena",
+    livelink: "https://new-athena.netlify.com"
   },
 ];
 
