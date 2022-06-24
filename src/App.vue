@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-brand-black">
+  <div class="bg-brand-black px-6">
     <Navbar />
     <router-view></router-view>
     <Footer />
