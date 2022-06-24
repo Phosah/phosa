@@ -5,12 +5,13 @@
                 class="mb-8 text-5xl md:text-6xl lg:text-8xl font-bold text-white leading-snug"
             >Let's Talk Development</h1>
             <p class="mb-8 max-w-xl mx-auto text-lg text-brand-gray tracking-wide">
-                Any project you want to bring to life or if you just want to
+                Is there any project you want to bring to life or do you just want to 
                 <span
                     class="text-white"
-                >say hi</span> feel free to
-                <span class="text-white">reach out or book an appointment</span>
+                >say hi, </span> feel free to
+                <span class="text-white">please reach out or book an appointment</span>
             </p>
+            
             <div class="mb-8">
                 <Links />
             </div>

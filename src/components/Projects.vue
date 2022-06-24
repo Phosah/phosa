@@ -21,7 +21,7 @@ const project = props.project as any;
                     <p>View Site</p>
                     <a :href="project.livelink" target="_blank">
                         <svg
-                            class="w-6 h-6"
+                            class="w-6 h-6 hover:transition-all hover:translate-x-1"
                             fill="currentColor"
                             viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg"
