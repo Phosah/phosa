@@ -8,7 +8,7 @@
             <div>
                 <!-- Calendly link widget begin -->
                 <a
-                    class="mt-8 py-3 px-10 bg-brand-purple text-white rounded-sm cursor-pointer"
+                    class="mt-8 py-3 px-10 bg-brand-purple hover:bg-brand-gray text-white rounded-sm cursor-pointer"
                     onclick="Calendly.initPopupWidget({url: 'https://calendly.com/phosa'});return false;"
                 >Let's talk</a>
                 <!-- Calendly link widget end -->

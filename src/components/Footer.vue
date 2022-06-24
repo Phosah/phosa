@@ -17,7 +17,7 @@
             </div>
             <!-- Calendly link widget begin -->
             <a
-                class="mt-8 py-3 px-10 bg-brand-purple text-white rounded-sm cursor-pointer"
+                class="py-3 px-10 bg-brand-purple text-white rounded-sm cursor-pointer hover:bg-brand-gray"
                 onclick="Calendly.initPopupWidget({url: 'https://calendly.com/phosa'});return false;"
             >Book an appointment</a>
             <!-- Calendly link widget end -->

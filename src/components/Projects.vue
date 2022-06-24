@@ -21,7 +21,7 @@ const project = props.project as any;
                     <p>View Site</p>
                     <a :href="project.livelink" target="_blank">
                         <svg
-                            class="w-6 h-6 hover:transition-all hover:translate-x-1"
+                            class="w-6 h-6 hover:transition-all hover:translate-x-1 hover:text-brand-gray"
                             fill="currentColor"
                             viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ const project = props.project as any;
                         </svg>
                     </a>
                 </div>
-                <div class="w-10 h-10 flex items-center justify-center bg-[#202020] rounded-full">
+                <div class="w-10 h-10 flex items-center justify-center bg-[#202020] rounded-full hover:bg-brand-gray">
                     <a :href="project.githubLink">
                         <img class src="../assets/github.png" alt="Github" />
                     </a>
