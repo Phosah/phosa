@@ -1,16 +1,3 @@
-<template>
-  <main>
-    <Hero />
-    <Arsenal />
-    <div class="max-w-7xl mx-auto py-20">
-      <h2 class="text-5xl md:text-6xl lg:text-7xl text-center text-white font-extrabold">Projects</h2>
-      <div v-for="project in projectsArr" :key="project.title">
-        <Projects :project="project" />
-      </div>
-    </div>
-  </main>
-</template>
-
 <script setup lang="ts">
 import Hero from "../components/Hero.vue";
 import Arsenal from "../components/Arsenal.vue";
@@ -79,5 +66,17 @@ const projectsArr = [
     livelink: "https://new-athena.netlify.app"
   },
 ];
-
 </script>
+
+<template>
+  <main>
+    <Hero />
+    <Arsenal />
+    <div class="max-w-7xl mx-auto py-20">
+      <h2 class="text-5xl md:text-6xl lg:text-7xl text-center text-white font-extrabold">Projects</h2>
+      <div v-for="project in projectsArr" :key="project.title">
+        <Projects :project="project" />
+      </div>
+    </div>
+  </main>
+</template>

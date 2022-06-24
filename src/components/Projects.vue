@@ -1,3 +1,10 @@
+<script setup lang="ts">
+import { defineProps } from 'vue';
+
+const props = defineProps(['project']);
+const project = props.project as any;
+</script>
+
 <template>
     <div class="md:flex md:items-center md:space-x-12 py-10 md:py-20 px-4">
         <div class="md:flex-1 mb-10 md:mb-0">
@@ -39,20 +46,3 @@
         </div>
     </div>
 </template>
-
-<script setup lang="ts">
-import { defineProps } from 'vue';
-
-const props = defineProps(['project']);
-
-const project = props.project as any;
-
-// export default {
-//     props: {
-//         project: {
-//             type: Object
-//         }
-//     }
-// }
-
-</script>
