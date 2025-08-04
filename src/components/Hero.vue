@@ -1,28 +1,117 @@
+
+
 <template>
-    <div class="max-w-5xl mx-auto py-32 px-4">
-        <div class="text-center">
-            <h1
-                class="mb-8 md:mb-12 text-5xl md:text-6xl lg:text-8xl font-extrabold text-brand-purple"
-            >Hi i am Phosa</h1>
-            <p class="max-w-xl mx-auto mb-12 md:text-lg text-brand-gray tracking-wide">
-                I'm a frontend developer with over
-                <span class="text-white">3 years</span> of experience and an immense love for
-                <span class="text-white">Vue</span> and Interactive web applications in
-                <span class="text-white">Fintech</span> and
-                <span class="text-white">Web3 applications</span>.
+    <main class="h-[60vh] relative">
+      <header
+        class="max-w-7xl mx-auto absolute inset-0 h-[60vh] py-2 md:flex md:items-center justify-between gap-20 z-10"
+      >
+        <div class="flex-1 relative z-50">
+          <!-- Safari: show gradient text -->
+          <div v-if="isSafari" class="safari-text-container">
+            <h1 class="safari-text" data-aos="flip-up" data-aos-duration="1000">
+                Hi i am Phosah
+            </h1>
+          </div>
+  
+          <!-- Chrome/Firefox/Edge: your original video-mask -->
+          <div v-else class="video-text-mask">
+            <svg width="100%" height="200" viewBox="0 0 1000 200">
+              <defs>
+                <mask id="text-mask">
+                  <rect width="100%" height="100%" fill="black" />
+                  <text
+                    x="50%"
+                    y="50%"
+                    text-anchor="middle"
+                    dominant-baseline="middle"
+                    font-size="100"
+                    font-family="Garamond, serif"
+                    font-weight="500"
+                    fill="white"
+                    data-aos="flip-up"
+                    data-aos-duration="1000"
+                  >
+                    Hi i am Phosah
+                  </text>
+                </mask>
+              </defs>
+
+              <foreignObject width="100%" height="100%" mask="url(#text-mask)">
+                <video autoplay loop muted playsinline class="object-cover w-full h-full">
+                  <source src="../assets/phosah-video.mp4" type="video/mp4" />
+                </video>
+              </foreignObject>
+            </svg>
+          </div>
+  
+          <p class="max-w-5xl mx-auto mb-12 md:text-lg text-brand-gray tracking-wide">
+                I’m a Full-Stack Developer with  <span class="text-white">6 years</span>  of experience delivering end-to-end web and mobile solutions. I leverage modern JavaScript frameworks (Vue, React, Next.js) alongside Flutter to build responsive, performant interfaces, and I architect backend services with Node.js/Express and Laravel. On the blockchain side, I design and deploy Solidity smart contracts and integrate on-chain logic into production-grade dApps. With a strong focus on CI/CD, performance optimization, and security best practices, I turn complex requirements in Fintech and Web3 into seamless, scalable products.
             </p>
         </div>
-        <Links />
-    </div>
-</template>
-
-<script lang="ts">
-import Links from "./Links.vue";
+      </header>
+    </main>
+  </template>
+  
+  <script setup lang="ts">
+  import { ref, onMounted } from 'vue'
+  
+  const isSafari = ref(false)
+  
+  onMounted(() => {
+    const ua = navigator.userAgent
+    const isActuallySafari = /^((?!chrome|crios|fxios|android).)*safari/i.test(ua)
+    const isIOS = /iPhone|iPad|iPod/.test(ua)
+    const isMobileScreen = window.innerWidth <= 768
+  
+    // Show Safari version if: it's Safari OR (iOS on small screen)
+    isSafari.value = isActuallySafari || (isIOS && isMobileScreen)
+  })
+  </script>
+  
+  <style scoped>
+  /* Safari fallback: gradient-filled text */
+  .safari-text-container {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .safari-text {
+    font-size: clamp(1.75rem, 12vw, 6rem);
+    font-weight: 500;
+    font-family: 'Garamond', serif;
+    background: linear-gradient(to right, #d97706, #fbbf24, #3b82f6);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: gradientShift 4s ease-in-out infinite;
+  }
+  
+  @keyframes gradientShift {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  /* Optional: ensure your video-text-mask sits where your h1 would */
+  .video-text-mask {
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  </style>
+  
+  <!-- import Links from "./Links.vue";
 export default {
     name: "Hero",
     components: { Links }
-}
-</script>
-
-<style>
-</style>
+} -->

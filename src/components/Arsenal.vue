@@ -1,7 +1,7 @@
 <template>
     <div class="max-w-3xl mx-auto py-10 md:py-20 px-4">
         <div class="flex flex-col items-center">
-            <div class="mb-10 h-24 border-r-2 border-brand-gray"></div>
+            <div class="mb-10 h-24 border-r-2 border-yellow-600"></div>
             <h4 class="mb-20 text-2xl text-white">My Arsenals</h4>
             <div class="grid grid-cols-4 gap-x-3 gap-16 md:gap-y-24">
                 <div class="mx-auto">
@@ -26,7 +26,7 @@
                     <img src="../assets/html.png" alt="html logo" />
                 </div>
             </div>
-            <div class="mt-10 h-24 border-r-2 border-brand-gray"></div>
+            <div class="mt-10 h-24 border-r-2 border-yellow-600"></div>
         </div>
     </div>
 </template>

@@ -8,8 +8,8 @@ const project = props.project as any;
 <template>
     <div class="md:flex md:items-center md:space-x-12 py-10 md:py-20 px-4">
         <div class="md:flex-1 mb-10 md:mb-0">
-            <h6 class="mb-6 text-xl text-brand-gray font-semibold">Role</h6>
-            <h5 class="mb-10 text-xl font-bold text-white">{{ project.subtitle }}</h5>
+            <h6 class="mb-2 text-xl text-brand-gray font-semibold">Role</h6>
+            <h5 class="mb-2 text-xl font-bold text-yellow-700">{{ project.subtitle }}</h5>
             <h3
                 class="mb-8 text-2xl md:text-3xl lg:text-4xl font-bold text-white tracking-wider leading-relaxed"
             >{{ project.title }}</h3>
@@ -21,7 +21,7 @@ const project = props.project as any;
                     <p>View Site</p>
                     <a :href="project.livelink" target="_blank">
                         <svg
-                            class="w-6 h-6 hover:transition-all hover:translate-x-1 hover:text-brand-gray"
+                            class="w-6 h-6 hover:transition-all hover:translate-x-1 hover:text-yellow-600"
                             fill="currentColor"
                             viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg"
@@ -34,15 +34,16 @@ const project = props.project as any;
                         </svg>
                     </a>
                 </div>
-                <div class="w-10 h-10 flex items-center justify-center bg-[#202020] rounded-full hover:bg-brand-gray">
+                <div class="w-10 h-10 flex items-center justify-center bg-[#202020] rounded-full hover:bg-yellow-600">
                     <a :href="project.githubLink">
                         <img class src="../assets/github.png" alt="Github" />
                     </a>
                 </div>
             </div>
         </div>
-        <div class="md:flex-1">
-            <img class="my-auto" :src="project.img" :alt="project.alt" />
+
+        <div class="md:flex-1 max-h-72">
+            <img class="max-h-72 w-full object-cover my-auto" :src="project.img" :alt="project.alt" />
         </div>
     </div>
 </template>

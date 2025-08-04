@@ -9,6 +9,8 @@ import img3 from "@/assets/bitpowr-photo.png"
 import img4 from "@/assets/music-photo.png"
 import img5 from "@/assets/nuovo-app-photo.png"
 import img6 from "@/assets/athena-photo.png"
+import cybergist from "@/assets/cybergist.png"
+import gruve from "@/assets/gruve.png"
 
 const projectsArr = [
   // {
@@ -20,6 +22,24 @@ const projectsArr = [
   //   githubLink: "https://github.com/Phosah/crypcoin",
   //   livelink: "https://crypcoinbinarytrade.com"
   // },
+  {
+    subtitle: "Web3 & Blockchain",
+    title: "Gruve Ticketing System",
+    description: "Gruve makes selling and purchasing event tickets easy and fun through a decentralized event experience.",
+    img: gruve,
+    alt: "Gruve photo",
+    githubLink: "https://github.com/Phosah/",
+    livelink: "https://beta.gruve.events"
+  },
+  {
+    subtitle: "Frontend & Wiring",
+    title: "Cybergist",
+    description: "CyberGist is a startup-in-progress focused on building a cybersecurity model capable of autonomous decision-making and protection.",
+    img: cybergist,
+    alt: "Cybergist photo",
+    githubLink: "https://github.com/Phosah/cybergist",
+    livelink: "https://cybergist.vercel.app"
+  },
   {
     subtitle: "Frontend & Wiring",
     title: "Aise's Portfolio",
