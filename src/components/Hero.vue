@@ -38,7 +38,7 @@
 
               <foreignObject width="100%" height="100%" mask="url(#text-mask)">
                 <video autoplay loop muted playsinline class="object-cover w-full h-full">
-                  <source src="../assets/phosah-4-video.mp4" type="video/mp4" />
+                  <source :src="selectedVideo" type="video/mp4" />
                 </video>
               </foreignObject>
             </svg>
@@ -56,6 +56,13 @@
   import { ref, onMounted } from 'vue'
   
   const isSafari = ref(false)
+  const selectedVideo = ref<string>('')
+
+const videos = [
+  new URL('../assets/phosah-2-video.mp4', import.meta.url).href,
+  new URL('../assets/phosah-3-video.mp4', import.meta.url).href,
+  new URL('../assets/phosah-4-video.mp4', import.meta.url).href,
+]
   
   onMounted(() => {
     const ua = navigator.userAgent
@@ -65,6 +72,9 @@
   
     // Show Safari version if: it's Safari OR (iOS on small screen)
     isSafari.value = isActuallySafari || (isIOS && isMobileScreen)
+
+    const randomIndex = Math.floor(Math.random() * videos.length);
+    selectedVideo.value = videos[randomIndex]
   })
   </script>
   
@@ -109,9 +119,3 @@
     justify-content: center;
   }
   </style>
-  
-  <!-- import Links from "./Links.vue";
-export default {
-    name: "Hero",
-    components: { Links }
-} -->
