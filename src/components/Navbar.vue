@@ -1,5 +1,5 @@
 <template>
-    <div class="max-w-7xl mx-auto px-4">
+    <div class="max-w-7xl mx-auto">
         <nav class="flex items-center justify-between py-4">
             <div class="flex items-center space-x-2">
                 <img src="../assets/phosa-logo.png" alt="Phosa logo" />
@@ -25,11 +25,12 @@ export default {
 
 <style>
 @font-face {
-    font-family: "NeueMachina-Ultrabold.otf";
+    font-family: "NeueMachina-Ultrabold";
     src: url("./fonts/NeueMachina-Ultrabold.otf") format("OpenType");
+    font-weight: 900;
 }
 @font-face {
-    font-family: "Euclid Circular A";
+    font-family: "Euclid Circular";
     src: local("Euclid Circular A"),
         url("./fonts/Euclid-Circular-A-light.ttf") format("OpenType");
 }

@@ -2,7 +2,7 @@
     <div class="max-w-4xl mx-auto py-10 md:py-20 px-4">
         <div class="text-center">
             <h1
-                class="mb-8 text-5xl md:text-6xl lg:text-8xl font-bold text-white leading-snug"
+                class="project-title mb-8 text-5xl md:text-6xl lg:text-8xl font-bold text-white leading-snug"
             >Let's Talk Development</h1>
             <p class="mb-8 max-w-xl mx-auto text-lg text-brand-gray tracking-wide">
                 Is there any project you want to bring to life or do you just want to 

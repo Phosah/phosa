@@ -9,7 +9,7 @@
           <!-- Safari: show gradient text -->
           <div v-if="isSafari" class="safari-text-container">
             <h1 class="safari-text" data-aos="flip-up" data-aos-duration="1000">
-                Hi i am Phosah
+                Hi, I am Phosah
             </h1>
           </div>
   
@@ -24,21 +24,21 @@
                     y="50%"
                     text-anchor="middle"
                     dominant-baseline="middle"
-                    font-size="100"
-                    font-family="Garamond, serif"
+                    font-size="120"
+                    font-family="Verdana"
                     font-weight="500"
                     fill="white"
                     data-aos="flip-up"
                     data-aos-duration="1000"
                   >
-                    Hi i am Phosah
+                    Hi, I am Phosah
                   </text>
                 </mask>
               </defs>
 
               <foreignObject width="100%" height="100%" mask="url(#text-mask)">
                 <video autoplay loop muted playsinline class="object-cover w-full h-full">
-                  <source src="../assets/phosah-video.mp4" type="video/mp4" />
+                  <source src="../assets/phosah-4-video.mp4" type="video/mp4" />
                 </video>
               </foreignObject>
             </svg>
@@ -80,7 +80,7 @@
   .safari-text {
     font-size: clamp(1.75rem, 12vw, 6rem);
     font-weight: 500;
-    font-family: 'Garamond', serif;
+    font-family: "NeueMachina-Ultrabold.otf";
     background: linear-gradient(to right, #d97706, #fbbf24, #3b82f6);
     background-size: 200% 200%;
     -webkit-background-clip: text;

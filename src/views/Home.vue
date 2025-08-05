@@ -2,11 +2,8 @@
 import Hero from "../components/Hero.vue";
 import Arsenal from "../components/Arsenal.vue";
 import Projects from "../components/Projects.vue";
-
-import img1 from "@/assets/crypcoin-photo.png"
 import img2 from "@/assets/aise-photo.png"
 import img3 from "@/assets/bitpowr-photo.png"
-import img4 from "@/assets/music-photo.png"
 import img5 from "@/assets/nuovo-app-photo.png"
 import img6 from "@/assets/athena-photo.png"
 import cybergist from "@/assets/cybergist.png"
@@ -14,15 +11,6 @@ import gruve from "@/assets/gruve.png"
 import sippy from '@/assets/sippy.png'
 
 const projectsArr = [
-  // {
-  //   subtitle: "Frontend & Wiring",
-  //   title: "Implementation of Crypcoin Finance",
-  //   description: "Crypcoin is a crypto solution that aids users in blockchain investing by giving staking abilities and profitable APY for investors to receive profits",
-  //   img: img1,
-  //   alt: "Crypcoin photo",
-  //   githubLink: "https://github.com/Phosah/crypcoin",
-  //   livelink: "https://crypcoinbinarytrade.com"
-  // },
   {
     subtitle: "Web3 & Blockchain",
     title: "Gruve Ticketing System",
@@ -68,15 +56,6 @@ const projectsArr = [
     githubLink: "https://github.com/Phosah/bitpowr",
     livelink: "https://bitpowr-web3.netlify.app"
   },
-  // {
-  //   subtitle: "Frontend & Wiring",
-  //   title: "Music app UI",
-  //   description: "A simple UI for a music player app with various reatures to improve interaction",
-  //   img: img4,
-  //   alt: "Music app photo",
-  //   githubLink: "https://github.com/Phosah/music-player-app",
-  //   livelink: "https://music-webpage.netlify.app"
-  // },
   {
     subtitle: "Frontend & Wiring",
     title: "Nuovo Store",
@@ -99,11 +78,11 @@ const projectsArr = [
 </script>
 
 <template>
-  <main>
+  <main class="mx-2 md:mx-12">
     <Hero />
     <Arsenal />
     <div class="max-w-7xl mx-auto py-20">
-      <h2 class="text-5xl md:text-6xl lg:text-7xl text-center text-white font-extrabold">Projects</h2>
+      <h2 class="project-title text-5xl md:text-6xl lg:text-7xl text-center text-white font-extrabold">Projects</h2>
       <div v-for="project in projectsArr" :key="project.title">
         <Projects :project="project" />
       </div>
