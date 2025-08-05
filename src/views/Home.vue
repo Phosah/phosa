@@ -11,6 +11,7 @@ import img5 from "@/assets/nuovo-app-photo.png"
 import img6 from "@/assets/athena-photo.png"
 import cybergist from "@/assets/cybergist.png"
 import gruve from "@/assets/gruve.png"
+import sippy from '@/assets/sippy.png'
 
 const projectsArr = [
   // {
@@ -30,6 +31,15 @@ const projectsArr = [
     alt: "Gruve photo",
     githubLink: "https://github.com/Phosah/",
     livelink: "https://beta.gruve.events"
+  },
+  {
+    subtitle: "Frontend & Wiring",
+    title: "Sippy",
+    description: "Sippy is a an advanced e-commerce store specially for drinks all around the country making it easier for users to access from their comfort zone",
+    img: sippy,
+    alt: "sippy photo",
+    githubLink: "https://github.com/Phosah/",
+    livelink: "https://sippy.life"
   },
   {
     subtitle: "Frontend & Wiring",

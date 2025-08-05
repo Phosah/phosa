@@ -6,7 +6,7 @@ const project = props.project as any;
 </script>
 
 <template>
-    <div class="md:flex md:items-center md:space-x-12 py-10 md:py-20 px-4">
+    <div class="md:flex md:items-center md:space-x-12 py-10 md:py-20 px-4 hover:shadow-xl hover:bg-opacity-80 transition-colors transition-all hover:scale-105 hover:bg-gray-800 hover:rounded-md">
         <div class="md:flex-1 mb-10 md:mb-0">
             <h6 class="mb-2 text-xl text-brand-gray font-semibold">Role</h6>
             <h5 class="mb-2 text-xl font-bold text-yellow-700">{{ project.subtitle }}</h5>
@@ -42,8 +42,8 @@ const project = props.project as any;
             </div>
         </div>
 
-        <div class="md:flex-1 max-h-72">
-            <img class="max-h-72 w-full object-cover my-auto" :src="project.img" :alt="project.alt" />
+        <div class="md:flex-1 max-h-72 rounded-md">
+            <img class="max-h-72 w-full object-cover my-auto  rounded-xl" :src="project.img" :alt="project.alt" />
         </div>
     </div>
 </template>

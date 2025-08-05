@@ -2,10 +2,10 @@
     <div class="max-w-3xl mx-auto py-10 md:py-20 px-4">
         <div class="flex flex-col items-center">
             <div class="mb-10 h-24 border-r-2 border-yellow-600"></div>
-            <h4 class="mb-20 text-2xl text-white">My Arsenals</h4>
+            <h4 class="mb-20 text-2xl text-white">My Arsenal</h4>
             <div class="grid grid-cols-6 gap-x-12 gap-16 md:gap-y-24">
-                <SolidityIcon class="w-10 h-10 text-black hover:text-yellow-700" />
-                <VueIcon class="w-10 h-10 text-black hover:text-yellow-700 transition-colors" color="blue" />
+                <SolidityIcon class="w-10 h-10 text-black hover:text-yellow-700 transition-colors" />
+                <VueIcon class="w-10 h-10 text-black hover:text-yellow-700 transition-colors" />
                 <TypescriptIcon class="w-10 h-10 text-black hover:text-yellow-700 transition-colors"  />
                 <TailwindIcon class="w-10 h-10 text-black hover:text-yellow-700 transition-colors"  />
                 <JavascriptIcon class="w-10 h-10 text-black hover:text-yellow-700 transition-colors"  />
