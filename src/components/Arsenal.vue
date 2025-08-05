@@ -28,7 +28,7 @@
     </div>
   </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import SolidityIcon from "./svgs/SolidityIcon.vue";
 import TypescriptIcon from "./svgs/TypescriptIcon.vue";
 import VueIcon from "./svgs/VueIcon.vue";
@@ -53,45 +53,12 @@ import JestIcon from "./svgs/JestIcon.vue";
 import EslintIcon from "./svgs/EslintIcon.vue";
 import CypressIcon from "./svgs/CypressIcon.vue";
 
-
-export default {
-    name: "Arsenal",
-    components: {
-        SolidityIcon,
-        TypescriptIcon,
-        VueIcon,
-        TailwindIcon,
-        JavascriptIcon,
-        ChainlinkIcon,
-        NodejsIcon,
-        NextjsIcon,
-        DockerIcon,
-        Web3jsIcon,
-        OpenzepplinIcon,
-        LinearIcon,
-        ExpressIcon,
-        NuxtIcon,
-        NestjsIcon,
-        GsapIcon,
-        StyledComponentIcon,
-        LaravelIcon,
-        ReactIcon,
-        ScssIcon,
-        JestIcon,
-        EslintIcon,
-        CypressIcon
-    },
-    data() {
-        return {
-            icons: [
-            SolidityIcon, VueIcon, TypescriptIcon, TailwindIcon,
-            JavascriptIcon, ChainlinkIcon, NodejsIcon, NextjsIcon,
-            DockerIcon, Web3jsIcon, OpenzepplinIcon, LinearIcon,
-            ExpressIcon, NuxtIcon, NestjsIcon, GsapIcon,
-            StyledComponentIcon, LaravelIcon, ReactIcon, ScssIcon,
-            JestIcon, EslintIcon, CypressIcon
-            ] 
-        }
-    }
-}
+const icons = [
+    SolidityIcon, VueIcon, TypescriptIcon, TailwindIcon,
+    JavascriptIcon, ChainlinkIcon, NodejsIcon, NextjsIcon,
+    DockerIcon, Web3jsIcon, OpenzepplinIcon, LinearIcon,
+    ExpressIcon, NuxtIcon, NestjsIcon, GsapIcon,
+    StyledComponentIcon, LaravelIcon, ReactIcon, ScssIcon,
+    JestIcon, EslintIcon, CypressIcon
+] 
 </script>
