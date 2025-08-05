@@ -30,7 +30,7 @@ const project = props.project as any;
         </h5>
   
         <h3
-          class="mb-8 text-2xl md:text-3xl lg:text-4xl font-bold text-white 
+          class="project-title mb-8 text-2xl md:text-3xl lg:text-4xl font-bold text-white 
                  tracking-wider leading-relaxed 
                  group-hover:text-gray-300"
         >

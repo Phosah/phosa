@@ -49,7 +49,7 @@ const projectsArr = [
   },
   {
     subtitle: "Frontend & Wiring",
-    title: "Implementation of Bitpowr",
+    title: "Bitpowr",
     description: "Crypcoin is a crypto solution that aids users in blockchain investing by giving staking abilities and profitable APY for investors to receive profits",
     img: img3,
     alt: "Bitpowr photo",

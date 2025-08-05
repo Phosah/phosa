@@ -1,37 +1,32 @@
 <template>
     <div class="max-w-3xl mx-auto py-10 md:py-20 px-4">
-        <div class="flex flex-col items-center">
-            <div class="mb-10 h-24 border-r-2 border-yellow-600"></div>
-            <h4 class="project-title mb-20 text-2xl text-white">My Arsenal</h4>
-            <div class="grid grid-cols-6 gap-x-12 gap-16 md:gap-y-24">
-                <SolidityIcon class="w-10 h-10 text-black hover:text-yellow-700 transition-colors" />
-                <VueIcon class="w-10 h-10 text-black hover:text-yellow-700 transition-colors" />
-                <TypescriptIcon class="w-10 h-10 text-black hover:text-yellow-700 transition-colors"  />
-                <TailwindIcon class="w-10 h-10 text-black hover:text-yellow-700 transition-colors"  />
-                <JavascriptIcon class="w-10 h-10 text-black hover:text-yellow-700 transition-colors"  />
-                <ChainlinkIcon class="w-10 h-10 text-black hover:text-yellow-700 transition-colors"  />
-                <NodejsIcon class="w-10 h-10 text-black hover:text-yellow-700 transition-colors"  />
-                <NextjsIcon class="w-10 h-10 text-black hover:text-yellow-700 transition-colors"  />
-                <DockerIcon class="w-10 h-10 text-black hover:text-yellow-700 transition-colors"  />
-                <Web3jsIcon class="w-10 h-10 text-black hover:text-yellow-700 transition-colors"  />
-                <OpenzepplinIcon class="w-10 h-10 text-black hover:text-yellow-700 transition-colors" />
-                <LinearIcon class="w-10 h-10 text-black hover:text-yellow-700 transition-colors"  />
-                <ExpressIcon class="w-10 h-10 text-black hover:text-yellow-700 transition-colors"  />
-                <NuxtIcon class="w-10 h-10 text-black hover:text-yellow-700 transition-colors"  />
-                <NestjsIcon class="w-10 h-10 text-black hover:text-yellow-700 transition-colors"  />
-                <GsapIcon class="w-10 h-10 text-black hover:text-yellow-700 transition-colors" />
-                <StyledComponentIcon class="w-10 h-10 text-black hover:text-yellow-700 transition-colors" />
-                <LaravelIcon class="w-10 h-10 text-black hover:text-yellow-700 transition-colors" />
-                <ReactIcon class="w-10 h-10 text-black hover:text-yellow-700 transition-colors" />
-                <ScssIcon class="w-10 h-10 text-black hover:text-yellow-700 transition-colors" />
-                <JestIcon class="w-10 h-10 text-black hover:text-yellow-700 transition-colors" />
-                <EslintIcon class="w-10 h-10 text-black hover:text-yellow-700 transition-colors" />
-                <CypressIcon class="w-10 h-10 text-black hover:text-yellow-700 transition-colors" />
+      <div class="flex flex-col items-center">
+        <div class="mb-10 h-16 border-r-2 border-yellow-600"></div>
+        <h4 class="project-title mb-20 text-2xl text-white">My Arsenal</h4>
+  
+        <div class="grid grid-cols-3 md:grid-cols-6 gap-x-12 gap-16 md:gap-y-24">
+          <template v-for="(Icon, i) in icons" :key="i">
+            <div
+              class="p-4 rounded-lg flex items-center justify-center
+                     bg-[#202020] 
+                     transition-all duration-300 ease-in-out
+                     hover:bg-yellow-600 hover:shadow-2xl
+                     hover:-translate-y-1
+                     ring-2 ring-transparent hover:ring-yellow-700"
+            >
+              <component
+                :is="Icon"
+                class="w-10 h-10 text-black transition-colors
+                       hover:text-white"
+              />
             </div>
-            <div class="mt-10 h-24 border-r-2 border-yellow-600"></div>
+          </template>
         </div>
+  
+        <div class="mt-10 h-16 border-r-2 border-yellow-600"></div>
+      </div>
     </div>
-</template>
+  </template>
 
 <script lang="ts">
 import SolidityIcon from "./svgs/SolidityIcon.vue";
@@ -57,6 +52,7 @@ import ScssIcon from "./svgs/ScssIcon.vue";
 import JestIcon from "./svgs/JestIcon.vue";
 import EslintIcon from "./svgs/EslintIcon.vue";
 import CypressIcon from "./svgs/CypressIcon.vue";
+
 
 export default {
     name: "Arsenal",
@@ -84,10 +80,18 @@ export default {
         JestIcon,
         EslintIcon,
         CypressIcon
+    },
+    data() {
+        return {
+            icons: [
+            SolidityIcon, VueIcon, TypescriptIcon, TailwindIcon,
+            JavascriptIcon, ChainlinkIcon, NodejsIcon, NextjsIcon,
+            DockerIcon, Web3jsIcon, OpenzepplinIcon, LinearIcon,
+            ExpressIcon, NuxtIcon, NestjsIcon, GsapIcon,
+            StyledComponentIcon, LaravelIcon, ReactIcon, ScssIcon,
+            JestIcon, EslintIcon, CypressIcon
+            ] 
+        }
     }
 }
 </script>
-
-<!-- div {
-    font-family: "Euclid Circular A", sans-serif;
-} -->
