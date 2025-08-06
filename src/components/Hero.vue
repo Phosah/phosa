@@ -45,7 +45,7 @@
           </div>
   
           <p class="max-w-5xl mx-auto mb-12 md:text-lg text-brand-gray tracking-wide text-center">
-                I’m a Full-Stack Developer with  <span class="text-white">6 years</span>  of experience delivering end-to-end web and mobile solutions. I leverage modern JavaScript frameworks (Vue, React, Next.js) alongside Flutter to build responsive, performant interfaces, and I architect backend services with Node.js/Express and Laravel. On the blockchain side, I design and deploy Solidity smart contracts and integrate on-chain logic into production-grade dApps. With a strong focus on CI/CD, performance optimization, and security best practices, I turn complex requirements in Fintech and Web3 into seamless, scalable products.
+                I’m a Full-Stack Developer with  <span class="dark:text-white text-yellow-600">6 years</span>  of experience delivering end-to-end web and mobile solutions. I leverage modern JavaScript frameworks (Vue, React, Next.js) alongside Flutter to build responsive, performant interfaces, and I architect backend services with Node.js/Express and Laravel. On the blockchain side, I design and deploy Solidity smart contracts and integrate on-chain logic into production-grade dApps. With a strong focus on CI/CD, performance optimization, and security best practices, I turn complex requirements in Fintech and Web3 into seamless, scalable products.
             </p>
         </div>
       </header>

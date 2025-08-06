@@ -82,7 +82,7 @@ const projectsArr = [
     <Hero />
     <Arsenal />
     <div class="max-w-7xl mx-auto py-20">
-      <h2 class="project-title text-5xl md:text-6xl lg:text-7xl text-center text-white font-extrabold">Projects</h2>
+      <h2 class="project-title text-5xl md:text-6xl lg:text-7xl text-center dark:text-white font-extrabold">Projects</h2>
       <div v-for="project in projectsArr" :key="project.title">
         <Projects :project="project" />
       </div>

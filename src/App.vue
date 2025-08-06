@@ -1,18 +1,35 @@
 <template>
-  <div class="bg-brand-black px-6">
+  <div class="dark:bg-brand-black px-6">
     <Navbar />
     <router-view></router-view>
     <Footer />
   </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
+import { provide, ref, onMounted } from 'vue'
 import Navbar from "./components/Navbar.vue";
 import Footer from "./components/Footer.vue";
-export default {
-  name: "App",
-  components: { Navbar, Footer }
+
+const isDark = ref(false)
+onMounted(() => {
+  const saved = localStorage.getItem('dark')
+  isDark.value = saved === 'true'
+  updateClass()
+})
+
+function updateClass() {
+  document.documentElement.classList.toggle('dark', isDark.value)
+  localStorage.setItem('dark', isDark.value.toString())
 }
+
+function toggleDark() {
+  isDark.value = !isDark.value
+  updateClass()
+}
+
+provide('toggleDark', toggleDark)
+provide('isDark', isDark)
 </script>
 
 <style>

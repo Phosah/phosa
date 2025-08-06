@@ -2,15 +2,15 @@
     <div class="max-w-3xl mx-auto py-10 md:py-20 px-4">
       <div class="flex flex-col items-center">
         <div class="mb-10 h-16 border-r-2 border-yellow-600"></div>
-        <h4 class="project-title mb-20 text-2xl text-white">My Arsenal</h4>
+        <h4 class="project-title mb-20 text-2xl dark:text-white">My Arsenal</h4>
   
         <div class="grid grid-cols-3 md:grid-cols-6 gap-x-12 gap-16 md:gap-y-24">
           <template v-for="(Icon, i) in icons" :key="i">
             <div
               class="p-4 rounded-lg flex items-center justify-center
-                     bg-[#202020] 
+                    bg-gray-200 dark:bg-[#202020] 
                      transition-all duration-300 ease-in-out
-                     hover:bg-yellow-600 hover:shadow-2xl
+                     hover:bg-yellow-600 dark:hover:bg-yellow-600 hover:shadow-2xl
                      hover:-translate-y-1
                      ring-2 ring-transparent hover:ring-yellow-700"
             >

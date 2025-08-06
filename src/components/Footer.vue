@@ -2,14 +2,14 @@
     <div class="max-w-4xl mx-auto py-10 md:py-20 px-4">
         <div class="text-center">
             <h1
-                class="project-title mb-8 text-5xl md:text-6xl lg:text-8xl font-bold text-white leading-snug"
+                class="project-title mb-8 text-5xl md:text-6xl lg:text-8xl font-bold dark:text-white leading-snug"
             >Let's Talk Development</h1>
             <p class="mb-8 max-w-xl mx-auto text-lg text-brand-gray tracking-wide">
                 Is there any project you want to bring to life or do you just want to 
                 <span
-                    class="text-white"
+                    class="text-yellow-600 dark:text-white"
                 >say hi, </span> feel free to
-                <span class="text-white">please reach out or book an appointment</span>
+                <span class="text-yellow-600 dark:text-white">please reach out or book an appointment</span>
             </p>
             
             <div class="mb-8">
