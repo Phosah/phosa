@@ -9,6 +9,10 @@ module.exports = {
           gray: "#777C87",
         },
       },
+      fontFamily: {
+        'openSans': ['Open Sans, sans-serif'],
+        'workSans': ['Work Sans, sans-serif']
+      }
     },
   },
   plugins: [],

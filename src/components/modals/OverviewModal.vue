@@ -59,7 +59,7 @@
                   <h4 class="text-lg font-semibold text-yellow-400 mb-3">
                     Overview
                   </h4>
-                  <p class="text-gray-300 text-base leading-relaxed">
+                  <p class="font-workSans text-gray-300 text-base leading-relaxed">
                     {{ project?.overview }}
                   </p>
                 </section>
