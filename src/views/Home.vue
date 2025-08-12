@@ -13,7 +13,7 @@
 </template>
 
 
-<script setup lang="ts">
+<script setup>
 import Hero from "../components/Hero.vue";
 import Arsenal from "../components/Arsenal.vue";
 import Project from "../components/Project.vue";
@@ -29,7 +29,7 @@ import { ref } from "vue";
 const isModalOpen = ref(false);
 const selectedProject = ref(null);
 
-function openModal(project: any) {
+function openModal(project) {
   isModalOpen.value = true;
   selectedProject.value = project;
 }
