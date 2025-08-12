@@ -42,7 +42,7 @@ provide('isDark', isDark)
   src: local("Euclid Circular A"),
     url("./fonts/Euclid-Circular-A-light.ttf") format("OpenType");
 }
-div {
+div, p {
   font-family: "Euclid Circular A", sans-serif;
 }
 </style>
