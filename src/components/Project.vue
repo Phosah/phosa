@@ -24,7 +24,7 @@
       </h3>
 
       <p
-        class="text-base md:text-lg text-brand-gray font-semibold tracking-wide group-hover:text-brand-gray-light"
+        class="project-description text-base md:text-lg text-brand-gray font-semibold tracking-wide group-hover:text-brand-gray-light"
       >
         {{ project.description }}
         
@@ -89,5 +89,8 @@ const project = props.project as any;
 <style>
 .project-title {
   font-family: "NeueMachina-Ultrabold.otf";
+}
+.project-description {
+  font-family: "Euclid Circular A", sans-serif;
 }
 </style>
