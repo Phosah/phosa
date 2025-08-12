@@ -1,5 +1,3 @@
-
-
 <template>
     <main class="h-[60vh] relative">
       <header
@@ -44,9 +42,23 @@
             </svg>
           </div>
   
-          <p class="max-w-5xl mx-auto mb-12 md:text-lg text-brand-gray tracking-wide text-center">
-                I’m a Full-Stack Developer with  <span class="dark:text-white text-yellow-600">6 years</span>  of experience delivering end-to-end web and mobile solutions. I leverage modern JavaScript frameworks (Vue, React, Next.js) alongside Flutter to build responsive, performant interfaces, and I architect backend services with Node.js/Express and Laravel. On the blockchain side, I design and deploy Solidity smart contracts and integrate on-chain logic into production-grade dApps. With a strong focus on CI/CD, performance optimization, and security best practices, I turn complex requirements in Fintech and Web3 into seamless, scalable products.
-            </p>
+          <div class="max-w-5xl mx-auto mb-12 md:text-lg tracking-wide text-center">
+            <p class="dark:text-gray-200"> I’m a Full-Stack Developer with  <span class="dark:text-white text-yellow-600">4 years</span>  of experience delivering end-to-end web and mobile solutions.</p>
+
+            <p class="dark:text-gray-200">I leverage modern JavaScript frameworks (Vue, React, Next.js) alongside Flutter to build responsive, </p>
+
+            <p class="text-yellow-600"> performant interfaces, and I architect backend services with Node.js/Express and Laravel. </p>
+
+            <p class="text-yellow-600">On the blockchain side, I design and deploy Solidity smart contracts and integrate </p>
+
+            <p class="text-yellow-600">on-chain logic into production-grade dApps. With a strong focus on CI/CD,  </p>
+               
+            <p class="text-brand-gray">performance optimization, and security best practices,</p>
+
+            <p class="text-brand-gray">I turn complex requirements in Fintech and Web3 </p>
+            
+            <p class="text-brand-gray">into seamless, scalable products.</p>
+          </div>
         </div>
       </header>
     </main>

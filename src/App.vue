@@ -11,7 +11,7 @@ import { provide, ref, onMounted } from 'vue'
 import Navbar from "./components/Navbar.vue";
 import Footer from "./components/Footer.vue";
 
-const isDark = ref(false)
+const isDark = ref(true)
 onMounted(() => {
   const saved = localStorage.getItem('dark')
   isDark.value = saved === 'true'
