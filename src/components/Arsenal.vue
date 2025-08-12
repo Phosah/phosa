@@ -1,18 +1,13 @@
 <template>
-    <div class="max-w-3xl mx-auto py-10 md:py-20 px-4">
-      <div class="flex flex-col items-center">
-        <div class="mb-10 h-16 border-r-2 border-yellow-600"></div>
-        <h4 class="project-title mb-20 text-2xl dark:text-white">My Arsenal</h4>
-  
-        <div class="grid grid-cols-3 md:grid-cols-6 gap-x-12 gap-16 md:gap-y-24">
-          <template v-for="(item, i) in icons" :key="i">
+  <div class="max-w-3xl mx-auto py-10 md:py-20 px-4">
+    <div class="flex flex-col items-center">
+      <div class="mb-10 h-16 border-r-2 border-yellow-600"></div>
+      <h4 class="project-title mb-20 text-2xl dark:text-white">My Arsenal</h4>
+
+      <div class="grid grid-cols-3 md:grid-cols-6 gap-x-4 md:gap-x-12 gap-16 md:gap-y-24">
+        <template v-for="(item, i) in icons" :key="i">
           <div
-            class="flex flex-col items-center space-y-2 p-4 rounded-lg
-                   bg-gray-200 dark:bg-[#202020]
-                   transition-all duration-300 ease-in-out
-                   hover:bg-yellow-600 dark:hover:bg-yellow-600 hover:shadow-2xl
-                   hover:-translate-y-1
-                   ring-2 ring-transparent hover:ring-yellow-700"
+            class="flex flex-col items-center space-y-2 px-6 py-4 md:p-4 rounded-lg bg-gray-200 dark:bg-[#202020] transition-all duration-300 ease-in-out hover:bg-yellow-600 dark:hover:bg-yellow-600 hover:shadow-2xl hover:-translate-y-1 ring-2 ring-transparent hover:ring-yellow-700"
           >
             <component
               :is="item.component"
@@ -23,12 +18,12 @@
             </span>
           </div>
         </template>
-        </div>
-  
-        <div class="mt-10 h-16 border-r-2 border-yellow-600"></div>
       </div>
+
+      <div class="mt-10 h-16 border-r-2 border-yellow-600"></div>
     </div>
-  </template>
+  </div>
+</template>
 
 <script setup lang="ts">
 import SolidityIcon from "./svgs/SolidityIcon.vue";

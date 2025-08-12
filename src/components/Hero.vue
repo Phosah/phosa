@@ -1,7 +1,7 @@
 <template>
-    <main class="h-[60vh] relative">
+    <main class="min-h-[60vh] md:h-[60vh] md:relative">
       <header
-        class="max-w-7xl mx-auto absolute inset-0 h-[60vh] py-2 md:flex md:items-center justify-between gap-20 z-10"
+        class="max-w-7xl mx-auto md:absolute inset-0  min:h-[60vh] py-2 md:flex md:items-center justify-between gap-20 z-10"
       >
         <div class="flex-1 relative z-50">
           <!-- Safari: show gradient text -->
