@@ -5,11 +5,20 @@
     <div
       class="md:flex-1 mb-10 md:mb-0 transition-colors duration-300 ease-in-out"
     >
-      <h6
-        class="mb-2 text-xl text-brand-gray font-semibold group-hover:text-yellow-600"
-      >
-        Role
-      </h6>
+      <div class="flex items-center justify-between mb-2">
+        <h6
+          class="text-xl text-brand-gray font-semibold group-hover:text-yellow-600"
+        >
+          Role
+        </h6>
+
+        <span
+          v-if="project.isLive"
+          class="px-3 py-1 text-xs font-bold uppercase tracking-wide bg-green-600 text-white rounded-full"
+        >
+          Live
+        </span>
+      </div>
 
       <h5
         class="mb-2 text-xl font-bold text-yellow-700 group-hover:text-yellow-500 transition-colors"
@@ -27,12 +36,13 @@
         class="font-openSans text-base md:text-lg text-brand-gray tracking-wide group-hover:text-brand-gray-light"
       >
         {{ project.description }}
-        
       </p>
-       <p
-          @click="$emit('openModal', project)"
-          class="mb-6 text-white text-sm hover:text-yellow-500 cursor-pointer border-b-2 inline-block hover:border-yellow-500"
-          >Read More</p>
+      <p
+        @click="$emit('openModal', project)"
+        class="mb-6 text-white text-sm hover:text-yellow-500 cursor-pointer border-b-2 inline-block hover:border-yellow-500"
+      >
+        Read More
+      </p>
 
       <div class="flex items-center justify-between">
         <a
