@@ -18,7 +18,7 @@
       </h5>
 
       <h3
-        class="project-title mb-8 text-2xl md:text-3xl lg:text-4xl font-bold text-white tracking-wider leading-relaxed group-hover:text-gray-300"
+        class="project-title mb-4 text-2xl md:text-3xl lg:text-4xl font-bold text-white tracking-wider leading-relaxed group-hover:text-gray-300"
       >
         {{ project.title }}
       </h3>
