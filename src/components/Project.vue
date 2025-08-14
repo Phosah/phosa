@@ -12,12 +12,14 @@
           Role
         </h6>
 
-        <span
-          v-if="project.isLive"
-          class="px-3 py-1 text-xs font-bold uppercase tracking-wide bg-green-600 text-white rounded-full"
-        >
-          Live
-        </span>
+        <div v-if="project.isLive" class="flex items-center space-x-2 px-3 py-1 rounded-full bg-gray-200 transition-all duration-300 ease-in-out hover:text-yellow-700  hover:shadow-2xl hover:-translate-y-1 ring-2 ring-transparent hover:ring-yellow-700">
+          <LiveServerIcon class="w-3 h-3 text-green-500" animation="ping" /> 
+          <span
+            class="text-xs font-bold uppercase tracking-wide"
+          >
+              Live
+            </span>
+          </div>
       </div>
 
       <h5
@@ -91,6 +93,7 @@
 
 <script setup lang="ts">
 import { defineProps } from "vue";
+import LiveServerIcon from "./svgs/LiveServerIcon.vue";
 
 const props = defineProps(["project"]);
 const project = props.project as any;

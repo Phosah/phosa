@@ -69,7 +69,7 @@ const projects = [
     isLive: true,
   },
   {
-    subtitle: "Frontend",
+    subtitle: "Fullstack",
     title: "Sippy",
     description:
       "Sippy is a an advanced e-commerce store specially for drinks all around the country making it easier for users to access from their comfort zone",
