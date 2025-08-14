@@ -135,7 +135,7 @@ const projects = [
   },
   {
     subtitle: "Frontend",
-    title: "Aise's Portfolio",
+    title: "Aise",
     description:
       "Aise is the personal portfolio of a senior product designer specializing in crafting user experiences for both Web2 and Web3 applications.",
     img: img2,
