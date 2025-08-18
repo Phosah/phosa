@@ -30,6 +30,7 @@ import img6 from "@/assets/athena-photo.png";
 import cybergist from "@/assets/cybergist.png";
 import gruve from "@/assets/gruve.png";
 import sippy from "@/assets/sippy.png";
+import autodipper from '@/assets/autodipper.png';
 import OverviewModal from "@/components/modals/OverviewModal.vue";
 import { ref } from "vue";
 
@@ -81,6 +82,19 @@ const projects = [
       "Sippy is a modern online platform for ordering and delivering both alcoholic and non-alcoholic beverages directly to your doorstep. Whether it’s a wedding, birthday, family gathering, or casual get-together, Sippy makes stocking up on drinks fast, affordable, and effortless. With a wide selection from popular soft drinks to premium spirits, unbeatable wholesale pricing, and delivery on your schedule, Sippy ensures you never run out of refreshments when it matters most. After signing up, customers can manage orders via a personalized dashboard, track ongoing deliveries, view past purchases, and enjoy light or dark mode for a tailored experience.Our mission is simple: bring joy and convenience to every occasion by removing the hassle of beverage shopping. Sippy isn’t just a delivery service — it’s your reliable drinks partner for every celebration.",
     stack: ["Typescript", "SCSS", "Next.js", "Redux", "React"],
     isLive: true,
+  },
+  {
+    subtitle: "Web3 & Blockchain",
+    title: "Autodipper",
+    description:
+    "AutoDipper is a decentralized application that automatically buys ETH when prices drop to user-defined thresholds.",
+    img: autodipper,
+    alt: "Autodipper photo",
+    githubLink: "https://github.com/Phosah/autodipper",
+    livelink: "https://auto-dipper.vercel.app/",
+    overview: "AutoDipper is a decentralized application that automatically buys ETH when prices drop to user-defined thresholds. It uses Chainlink's decentralized oracle network to get real-time ETH/USD price data and executes trades automatically when conditions are met.",
+    stack: ["Solidity", "React", "Vercel", "Etherjs", "Openzeppelin"],
+    isLive: false,
   },
   {
     subtitle: "Frontend",
