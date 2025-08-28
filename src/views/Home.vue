@@ -84,7 +84,7 @@ const projects = [
     isLive: true,
   },
   {
-    subtitle: "Web3 & Blockchain",
+    subtitle: "Web3 & DeFi",
     title: "Autodipper",
     description:
     "AutoDipper is a decentralized application that automatically buys ETH when prices drop to user-defined thresholds.",
@@ -141,7 +141,7 @@ const projects = [
     img: cybergist,
     alt: "Cybergist photo",
     githubLink: "",
-    livelink: "https://cybergist.vercel.app",
+    livelink: "https://thecybergist.com",
     overview:
       "CyberGist is an emerging cybersecurity platform designed to autonomously detect, mitigate, and neutralize digital threats in real-time. By combining visual network modeling, machine learning, and kernel-level security, CyberGist delivers both proactive and reactive defense mechanisms for modern network environments. Key capabilities include visualizing network topology and data flow, protecting sensitive information, securing access points with Single Sign-On (SSO), monitoring for abnormal network behavior, and safeguarding kernel virtual address space and memory. Its AI engine continuously learns from its environment, isolating and investigating potential threats before they escalate. CyberGist represents a forward-looking approach to cybersecurity — integrating advanced analytics, intelligent automation, and deep system-level protection to keep networks resilient against evolving threats.",
     stack: ["Vue", "Tailwind", "CSS", "AOS"],
